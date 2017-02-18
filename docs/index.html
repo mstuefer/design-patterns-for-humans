@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+<title>Design Patterns for Humans</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+    body, h1, h2, h3, h4, h5, h6 {
+        font-family: "Lato", sans-serif
+    }
+
+    .w3-navbar, h1, button {
+        font-family: "Montserrat", sans-serif
+    }
+
+    .fa-anchor, .fa-coffee {
+        font-size: 200px
+    }
+
+    .info-icon {
+        width: 10%;
+        margin: 0 15px 0px 0;
+        vertical-align: middle;
+    }
+
+    .info-text {
+        border-left: 1px solid red;
+        padding-left: 15px;
+    }
+
+    hr {
+        /*border:none;*/
+        width: 80%;
+        text-align: center;
+        margin: 15px auto;
+    }
+
+</style>
+<body>
+
+<!-- Navbar -->
+<div class="w3-top">
+    <ul class="w3-navbar w3-red w3-card-2 w3-left-align w3-large">
+        <li class="w3-hide-medium w3-hide-large w3-opennav w3-right">
+            <a class="w3-padding-large w3-hover-white w3-large w3-red" href="javascript:void(0);"
+               onclick="toggleNavigationMenu()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+        </li>
+        <li><a href="/" class="w3-padding-large w3-white">Home</a></li>
+        <li class="w3-hide-small"><a href="/CreationalPatterns/index.html" class="w3-padding-large w3-hover-white">Creational Patterns</a></li>
+        <li class="w3-hide-small"><a href="/StructuralPatterns/index.html" class="w3-padding-large w3-hover-white">Structural Patterns</a></li>
+        <li class="w3-hide-small"><a href="/BehavioralPatterns/index.html" class="w3-padding-large w3-hover-white">Behavioral Patterns</a></li>
+    </ul>
+
+    <!-- Navbar on small screens -->
+    <div id="navDemo" class="w3-hide w3-hide-large w3-hide-medium">
+        <ul class="w3-navbar w3-left-align w3-large w3-black">
+            <li><a class="w3-padding-large" href="/CreationalPatterns/index.html">Creational Patterns</a></li>
+            <li><a class="w3-padding-large" href="/StructuralPatterns/index.html">Structural Patterns</a></li>
+            <li><a class="w3-padding-large" href="/BehavioralPatterns/index.html">Behavioral Patterns</a></li>
+        </ul>
+    </div>
+</div>
+
+<!-- Header -->
+<header class="w3-container w3-red w3-center w3-padding-128">
+    <h1 class="w3-margin w3-jumbo">DESIGN PATTERNS FOR HUMANS</h1>
+    <p class="w3-xlarge">Ultra-simplified explanation to design patterns</p>
+</header>
+
+<!-- First Grid -->
+<div class="w3-row-padding w3-padding-64 w3-container">
+    <div class="w3-content">
+            <h1>Introduction</h1>
+            <h5 class="w3-padding-32">Design patterns are solutions to recurring problems; guidelines on how to tackle
+                certain problems. They are not classes, packages or libraries that you can plug into your application
+                and wait for the magic to happen. These are, rather, guidelines on how to tackle certain problems in
+                certain situations.</h5>
+
+            <div class="w3-row">
+                <div class="w3-col w3-center info-icon"><i class="fa fa-info w3-jumbo"></i></div>
+                <div class="w3-rest info-text">
+                    <p>Design patterns solutions to recurring problems; guidelines on how to tackle certain problems</p>
+                </div>
+            </div>
+            <hr>
+            <div class="w3-row">
+                <div class="w3-col w3-center info-icon"><i class="fa fa-wikipedia-w w3-jumbo"></i></div>
+                <div class="w3-rest info-text">
+                    <p>In software engineering, a software design pattern is a general reusable solution to a commonly
+                        occurring problem within a given context in software design. It is not a finished design that
+                        can be transformed directly into source or machine code. It is a description or template for how
+                        to solve a problem that can be used in many different situations.</p>
+                </div>
+            </div>
+            <hr>
+            <div class="w3-row">
+                <div class="w3-col w3-center info-icon"><i class="fa fa-exclamation w3-jumbo w3-text-red"></i></div>
+                <div class="w3-rest info-text">
+                    <ul>
+                        <li>Design patterns are not a silver bullet to all your problems.</li>
+                        <li>Do not try to force them; bad things are supposed to happen, if done so. Keep in mind that
+                            design patterns are solutions to problems, not solutions finding problems; so don't
+                            overthink.
+                        </li>
+                        <li>If used in a correct place in a correct manner, they can prove to be a savior; or else they
+                            can result in a horrible mess of a code
+                        </li>
+                    </ul>
+                </div>
+            </div>
+    </div>
+</div>
+
+<!-- Second Grid -->
+<div class="w3-row-padding w3-light-grey w3-padding-64 w3-container">
+    <div class="w3-content">
+        <h1>Types of Design Patterns</h1>
+
+        <div class="w3-third w3-center" style="padding: 10px;">
+            <div class="w3-card-4">
+                <header class="w3-container w3-light-grey">
+                    <h3>Creational Patterns</h3>
+                </header>
+
+                <div class="w3-container w3-center">
+                    <img src="images/CreationalPattern.jpg" alt="CreationalPattern" style="width:100%">
+                    <br><br>
+                </div>
+
+                <button class="w3-btn-block w3-dark-grey">+ Read More +</button>
+            </div>
+        </div>
+
+        <div class="w3-third w3-center"style="padding: 10px;">
+            <div class="w3-card-4">
+                <header class="w3-container w3-light-grey">
+                    <h3>Structural Patterns</h3>
+                </header>
+
+                <div class="w3-container w3-center" >
+                    <img src="images/StructuralPattern.jpg" alt="StructuralPattern" style="width:100%">
+                    <br><br>
+                </div>
+
+                <button class="w3-btn-block w3-dark-grey">+ Read More +</button>
+            </div>
+        </div>
+
+
+        <div class="w3-third w3-center"style="padding: 10px;">
+            <div class="w3-card-4">
+                <header class="w3-container w3-light-grey">
+                    <h3>Behavioral Patterns</h3>
+                </header>
+
+                <div class="w3-container w3-center" >
+                    <img src="images/BehavioralPattern.jpg" alt="BehavioralPattern" style="width:100%">
+                    <br><br>
+                </div>
+
+                <button class="w3-btn-block w3-dark-grey">+ Read More +</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="w3-container w3-black w3-center w3-opacity w3-padding-64">
+    <h1 class="w3-margin w3-xlarge">Design Patterns, explained in the <i>simplest</i> way possible.</h1>
+</div>
+
+<!-- Footer -->
+<footer class="w3-container w3-padding-64 w3-center w3-opacity">
+
+</footer>
+
+<script>
+    // Used to toggle the menu on small screens when clicking on the menu button
+    function toggleNavigationMenu() {
+        var x = document.getElementById("navDemo");
+        if (x.className.indexOf("w3-show") == -1) {
+            x.className += " w3-show";
+        } else {
+            x.className = x.className.replace(" w3-show", "");
+        }
+    }
+</script>
+</body>
+</html>
